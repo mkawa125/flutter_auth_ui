@@ -22,7 +22,7 @@ class _loginSignUpPageState extends State<loginSignUpPage> {
           child:Column(
             children: [
               Padding(
-                padding: EdgeInsets.only(top: 120, bottom: 22),
+                padding: EdgeInsets.only(top: 100, bottom: 22),
                 child: Center(
                   child: Text(
                     "Hello",
@@ -45,46 +45,28 @@ class _loginSignUpPageState extends State<loginSignUpPage> {
                       );
                     },
                     child: Container(
-                      height: MediaQuery.of(context).size.height * .55,
+                      height: MediaQuery.of(context).size.height * .10,
                       width: MediaQuery.of(context).size.width * .45,
                       decoration: BoxDecoration(
                         color: Colors.blue[700],
                         borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(20),
-                          bottomRight: Radius.circular(20)
+                          topRight: Radius.circular(10),
+                          bottomRight: Radius.circular(10)
                         )
                       ),
-                      child: Padding(padding: EdgeInsets.only(right:22, top:28,),
+                      child: Padding(padding: EdgeInsets.only(right:8, top:8,),
                         child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.end,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Padding(padding: EdgeInsets.only(bottom: 8, top: 8),
                               child: Text("Sign Up",
                                 style: GoogleFonts.sourceCodePro(
                                   color: Colors.white,
-                                  fontSize: 26,
+                                  fontSize: 20,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 8, bottom: 8.0),
-                              child: Text("New Here?",
-                                style: GoogleFonts.sourceCodePro(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w400
-                                ),
-                              ),
-                            ),
-                            Text("Don't worry, just sign in to gain access to amazing app",
-                              style: GoogleFonts.sourceCodePro(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w400,
-                                color: Colors.white
-                              ),
-                              textAlign: TextAlign.right,
-                            )
                           ],
                         )
                       )
@@ -101,64 +83,40 @@ class _loginSignUpPageState extends State<loginSignUpPage> {
                         ),
                       );
                     },
+
                     child: Container(
-                      height: MediaQuery.of(context).size.height * .55,
-                      width: MediaQuery.of(context).size.width * .45,
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(20),
-                          topRight: Radius.circular(20)
-                        )
-                      ),
-                      child: Padding(
-                        padding: EdgeInsets.only(
-                          left: 22,
-                          right: 22,
+                        height: MediaQuery.of(context).size.height * .10,
+                        width: MediaQuery.of(context).size.width * .45,
+                        decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(10),
+                                bottomLeft: Radius.circular(10)
+                            )
                         ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start, children: [
-                            Padding(
-                              padding: EdgeInsets.only(
-                                bottom: 8,
-                              ),
-                              child: Text(
-                                "Sign In",
-                                style: GoogleFonts.sourceCodePro(
-                                  color: Colors.white,
-                                  fontSize: 26,
-                                  fontWeight: FontWeight.w500,
+                        child: Padding(padding: EdgeInsets.only(right:8, top:8,),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Padding(padding: EdgeInsets.only(bottom: 8, top: 8),
+                                  child: Text("Sign In",
+                                    style: GoogleFonts.sourceCodePro(
+                                      color: Colors.white,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
                                 ),
-                              ),
-                            ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 8, bottom:8.0),
-                            child: Text("Returning?",
-                              style: GoogleFonts.sourceCodePro(
-                                color: Colors.white,
-                                fontSize: 18,
-                                fontWeight: FontWeight.w400,
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 8, bottom:8.0),
-                            child: Text("Just sign in to resume what you were doing",
-                              textAlign: TextAlign.left,
-                              style: GoogleFonts.sourceCodePro(
-                                color: Colors.white,
-                                fontSize: 18,
-                                fontWeight: FontWeight.w400,
-                              ),
-                            ),
-                          )
-                        ],
-                        ),
-                      ),
+                              ],
+                            )
+                        )
                     ),
                   )
                 ],
               ),
+              // End Row
+
+
               Padding(
                 padding: const EdgeInsets.only(top: 18.0),
                 child: Row(
