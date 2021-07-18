@@ -248,7 +248,7 @@ class _LoginPageState extends State<LoginPage> {
                                     fontWeight: FontWeight.w500
                                   ),
                                 ),
-                                alignment: Alignment.centerLeft,
+                                alignment: Alignment.centerRight,
                               ),
                             ),
                           ),
