@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 // ignore: camel_case_types
@@ -76,7 +77,7 @@ class _signUpPageState extends State<signUpPage> {
                   left: MediaQuery.of(context).size.width * .06,
                 ),
                 child: Container(
-                  height: MediaQuery.of(context).size.height * .55,
+                  height: MediaQuery.of(context).size.height * .50,
                   width: MediaQuery.of(context).size.width * 100,
                   decoration: BoxDecoration(color: Colors.blue[700],
                     borderRadius: BorderRadius.circular(20)
@@ -94,12 +95,13 @@ class _signUpPageState extends State<signUpPage> {
                         children: [
                           Padding(
                             padding: EdgeInsets.only(
-                              bottom: 18
+                              bottom: 20,
+                              top: 20
                             ),
                             child: Text("Sign Up",
                               style: GoogleFonts.sourceCodePro(
                                 color: Colors.white,
-                                fontSize: 26,
+                                fontSize: 28,
                                 fontWeight: FontWeight.w500,
 
                               ),
@@ -161,7 +163,7 @@ class _signUpPageState extends State<signUpPage> {
 
                           Padding(
                             padding: EdgeInsets.only(
-                              top: 20,
+                              top: 25,
                               left: 6,
                               right: 6,
                             ),
@@ -218,7 +220,7 @@ class _signUpPageState extends State<signUpPage> {
                             padding: EdgeInsets.only(
                               left: 6,
                               right: 6,
-                              top: 20
+                              top: 25
                             ),
                             child: TextFormField(cursorColor: Colors.white,
                                 style: TextStyle(color: Colors.white,),
@@ -276,6 +278,38 @@ class _signUpPageState extends State<signUpPage> {
                                   return null;
                                 }
                             ),
+                          ),
+
+                          GestureDetector(
+                            behavior: HitTestBehavior.opaque,
+                            child: Padding(
+                              padding: EdgeInsets.only(
+                                top: 30,
+                              ),
+                              child: Container(
+                                height: 50,
+                                width: 50,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey,
+                                    )
+                                  ],
+                                  shape: BoxShape.circle,
+
+                                ),
+                                child: _isLoading?
+                                SpinKitFadingCircle(color: Colors.blue) : Icon(Icons.arrow_forward, color:Colors.blue),
+                              ),
+                            ),
+
+                            onTap: (){
+                              print("Checking credentials");
+                              setState(() {
+                                _isLoading = true;
+                              });
+                            },
                           ),
                         ],
                       ),
