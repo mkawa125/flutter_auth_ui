@@ -48,7 +48,7 @@ class _loginSignUpPageState extends State<loginSignUpPage> {
                       height: MediaQuery.of(context).size.height * .10,
                       width: MediaQuery.of(context).size.width * .45,
                       decoration: BoxDecoration(
-                        color: Colors.blue[700],
+                        color: Colors.green[700],
                         borderRadius: BorderRadius.only(
                           topRight: Radius.circular(10),
                           bottomRight: Radius.circular(10)
@@ -88,7 +88,7 @@ class _loginSignUpPageState extends State<loginSignUpPage> {
                         height: MediaQuery.of(context).size.height * .10,
                         width: MediaQuery.of(context).size.width * .45,
                         decoration: BoxDecoration(
-                            color: Colors.blue,
+                            color: Colors.blue[700],
                             borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(10),
                                 bottomLeft: Radius.circular(10)
@@ -124,12 +124,13 @@ class _loginSignUpPageState extends State<loginSignUpPage> {
                   children: [
                     Padding(padding: EdgeInsets.only(
                       right: 6,
+                      bottom: 0
                     ),
                       child:Container(
                         height: 48,
                         width: 48,
                         decoration: BoxDecoration(
-                          color: Colors.red,
+                          color: Color(0xffDB4437),
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey,
@@ -144,7 +145,57 @@ class _loginSignUpPageState extends State<loginSignUpPage> {
                           )
                         ),
                       ),
-                    )
+                    ),
+
+                    Padding(padding: EdgeInsets.only(
+                        right: 6,
+                        bottom: 0
+                    ),
+                      child:Container(
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          color: Colors.lightBlueAccent,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey,
+                            )
+                          ],
+                          shape: BoxShape.circle,
+                        ),
+                        child: Center(
+                            child: FaIcon(
+                              FontAwesomeIcons.twitter,
+                              color:Colors.white,
+                            )
+                        ),
+                      ),
+                    ),
+
+                    Padding(padding: EdgeInsets.only(
+                        right: 6,
+                        bottom: 0
+                    ),
+                      child:Container(
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          color: Color(0xff123456),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey,
+                            )
+                          ],
+                          shape: BoxShape.circle,
+                        ),
+                        child: Center(
+                            child: FaIcon(
+                              FontAwesomeIcons.facebook,
+                              color:Colors.white,
+                            )
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               )
