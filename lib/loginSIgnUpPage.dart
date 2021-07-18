@@ -22,7 +22,7 @@ class _loginSignUpPageState extends State<loginSignUpPage> {
           child:Column(
             children: [
               Padding(
-                padding: EdgeInsets.only(top: 100, bottom: 22),
+                padding: EdgeInsets.only(top: 150, bottom: 40),
                 child: Center(
                   child: Text(
                     "Hello",
@@ -118,17 +118,17 @@ class _loginSignUpPageState extends State<loginSignUpPage> {
 
 
               Padding(
-                padding: const EdgeInsets.only(top: 18.0),
+                padding: const EdgeInsets.only(top: 120.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Padding(padding: EdgeInsets.only(
                       right: 6,
-                      bottom: 0
+                      bottom: 0,
                     ),
                       child:Container(
-                        height: 48,
-                        width: 48,
+                        height: 45,
+                        width: 45,
                         decoration: BoxDecoration(
                           color: Color(0xffDB4437),
                           boxShadow: [
@@ -140,7 +140,7 @@ class _loginSignUpPageState extends State<loginSignUpPage> {
                         ),
                         child: Center(
                             child: FaIcon(
-                            FontAwesomeIcons.google,
+                            FontAwesomeIcons.googlePlusG,
                             color:Colors.white,
                           )
                         ),
@@ -152,8 +152,8 @@ class _loginSignUpPageState extends State<loginSignUpPage> {
                         bottom: 0
                     ),
                       child:Container(
-                        height: 48,
-                        width: 48,
+                        height: 45,
+                        width: 45,
                         decoration: BoxDecoration(
                           color: Colors.lightBlueAccent,
                           boxShadow: [
@@ -177,8 +177,8 @@ class _loginSignUpPageState extends State<loginSignUpPage> {
                         bottom: 0
                     ),
                       child:Container(
-                        height: 48,
-                        width: 48,
+                        height: 45,
+                        width: 45,
                         decoration: BoxDecoration(
                           color: Color(0xff123456),
                           boxShadow: [
@@ -190,7 +190,7 @@ class _loginSignUpPageState extends State<loginSignUpPage> {
                         ),
                         child: Center(
                             child: FaIcon(
-                              FontAwesomeIcons.facebook,
+                              FontAwesomeIcons.facebookF,
                               color:Colors.white,
                             )
                         ),
