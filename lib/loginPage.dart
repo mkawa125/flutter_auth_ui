@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -31,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              GestureDetector(
+              GestureDetector( // Add navigation icon
                 onTap: (){
                   Navigator.pop(context);
                 },
@@ -53,7 +54,24 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                 ),
-              )
+              ),
+
+              Padding(
+                padding: EdgeInsets.only(
+                  top: 19,
+                  bottom: 24,
+                  right: MediaQuery.of(context).size.width * .15,
+                  left: MediaQuery.of(context).size.width * .15,
+                ),
+                child: Center(
+                  child: Text("Welcome back",
+                    style: GoogleFonts.sourceCodePro(
+                      fontSize: MediaQuery.of(context).size.width * .089,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
