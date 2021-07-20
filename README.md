@@ -1,4 +1,4 @@
-# flutter_auth_ui
+# Flutter Login Register UI
 
 A new Flutter application.
 
